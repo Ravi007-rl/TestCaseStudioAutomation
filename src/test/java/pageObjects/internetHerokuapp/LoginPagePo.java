@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageObjects.BasePo;
 
-public class LoginPagePOM extends BasePo {
+public class LoginPagePo extends BasePo {
 
-    public LoginPagePOM(WebDriver driver){
+    public LoginPagePo(WebDriver driver){
         super(driver);
     }
 

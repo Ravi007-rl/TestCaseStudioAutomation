@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageObjects.BasePo;
 
-public class TestStudioAutomationPOM extends BasePo {
+public class TestStudioAutomationPo extends BasePo {
 
-    public TestStudioAutomationPOM(WebDriver driver){
+    public TestStudioAutomationPo(WebDriver driver){
         super(driver);
     }
 
@@ -14,6 +14,7 @@ public class TestStudioAutomationPOM extends BasePo {
 
     //Web Elements
     private static final By SaveButton = By.id("save_btn");
+    private static final By recordedSteps = By.id("records-grid");
 
     public void OpenExtensionPage(){
         extensionUtil.openNewTab();

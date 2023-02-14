@@ -54,8 +54,5 @@ public class ExtensionUtils {
         var element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         element.clear();
         element.sendKeys(text);
-
     }
-
-
 }
