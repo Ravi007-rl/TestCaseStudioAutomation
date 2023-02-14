@@ -1,9 +1,9 @@
 package tests;
 
 import org.testng.annotations.Test;
-import pageObjects.internetHerokuapp.InternetHerokuAppPo;
+import pageObjects.internetHerokuapp.HomePagePo;
 import pageObjects.internetHerokuapp.LoginPagePo;
-import pageObjects.internetHerokuapp.NumberTextBoxPo;
+import pageObjects.internetHerokuapp.NumberPagePo;
 
 public class TestCaseStudioAutomationTest extends BaseTest{
 
@@ -22,14 +22,14 @@ public class TestCaseStudioAutomationTest extends BaseTest{
 
     @Test
     public void VerifyUserCanEnterNumberInTextBox(){
-        var internetHerokuAppPo = new InternetHerokuAppPo(driver);
-        var numberTextBoxPo = new NumberTextBoxPo(driver);
+        var homePagePo = new HomePagePo(driver);
+        var numberPagePo = new NumberPagePo(driver);
 
         //Open "Base Url" page of Internet Herokuapp
         driver.get(BASEURL);
 
         //Enter go to "Input page" & Enter value in number field
-        internetHerokuAppPo.ClickOnInputLink();
-        numberTextBoxPo.EnterValueInNumberTextBox();
+        homePagePo.ClickOnInputLink();
+        numberPagePo.EnterValueInNumberTextBox();
     }
 }

@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageObjects.BasePo;
 
-public class NumberTextBoxPo extends BasePo {
-    public NumberTextBoxPo(WebDriver driver) {
+public class NumberPagePo extends BasePo {
+    public NumberPagePo(WebDriver driver) {
         super(driver);
     }
 
     private static final By numberTextBox = By.cssSelector("input[type='number']");
 
     public void EnterValueInNumberTextBox(){
-        extensionUtil.EnterText(numberTextBox,"1234");
+        helpers.EnterText(numberTextBox,"1234");
     }
 }

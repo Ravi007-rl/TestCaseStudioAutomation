@@ -15,11 +15,11 @@ public class LoginPagePo extends BasePo {
     private static final By logInButton = By.xpath("//button[@type='submit']/i[contains(text(),'Login')]");
 
     public void ClickOnLogInButton(){
-        extensionUtil.clickOn(logInButton);
+        helpers.clickOn(logInButton);
     }
 
     public void EnterUserNameAndPassword(){
-        extensionUtil.EnterText(userNameTextBox,"tomsmith");
-        extensionUtil.EnterText(passWordTextBox,"SuperSecretPassword!");
+        helpers.EnterText(userNameTextBox,"tomsmith");
+        helpers.EnterText(passWordTextBox,"SuperSecretPassword!");
     }
 }

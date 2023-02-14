@@ -3,7 +3,7 @@ package tests;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import utils.DriverFactory;
-import hooks.ExtensionHook;
+import hooks.Hooks;
 import org.openqa.selenium.WebDriver;
 
 public class BaseTest {
@@ -14,12 +14,12 @@ public class BaseTest {
     @BeforeMethod
     public void beforeMethod(){
         driver = DriverFactory.CreateWebDriver();
-        ExtensionHook.SetUpExtension(driver);
+        Hooks.SetUpExtension(driver);
     }
 
     @AfterMethod
     public void afterMethod(){
-        ExtensionHook.ClenUp(driver);
+        Hooks.CleanUp(driver);
         driver.quit();
     }
 }

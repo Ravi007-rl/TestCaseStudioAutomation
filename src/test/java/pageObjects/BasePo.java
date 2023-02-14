@@ -1,14 +1,14 @@
 package pageObjects;
 
-import utils.ExtensionUtils;
+import utils.Helpers;
 import org.openqa.selenium.WebDriver;
 
 public class BasePo {
     protected WebDriver driver;
-    protected ExtensionUtils extensionUtil;
+    protected Helpers helpers;
 
     public BasePo(WebDriver driver){
         this.driver = driver;
-        extensionUtil = new ExtensionUtils(driver);
+        helpers = new Helpers(driver);
     }
 }
